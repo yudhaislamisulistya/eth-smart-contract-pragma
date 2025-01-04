@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.7.2+commit.51b20bc0"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"pingpong.sol": "PingPon2g"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"pingpong.sol": {
+			"keccak256": "0x1dd4aba3272dc1fa1198e16c12fdbbcf3446738516bb2ec45b6bbe54069b41be",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://44651d9b30ee75066b715edd801c558fa00173a40bf6745d9a8450a46a56b47e",
+				"dweb:/ipfs/QmeRUFD5sAD1KtMFmuWbU7gqkTGjANwvktHKum1P52uySW"
+			]
+		}
+	},
+	"version": 1
+}

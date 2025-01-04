@@ -1,0 +1,95 @@
+{
+	"compiler": {
+		"version": "0.7.2+commit.51b20bc0"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "message",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_message",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_supply",
+						"type": "uint256"
+					}
+				],
+				"name": "ping",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "pong",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"pingpong.sol": "PingPong"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"pingpong.sol": {
+			"keccak256": "0x604a4377b31707823b489a46dd750e8edf35daeda7233f52b649fabb7f89d7a1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://84d98d8091aa60c79b5a9a867023b0c6f017e16ee7f9cac56c7c6f32bf629fe9",
+				"dweb:/ipfs/QmSxphwg1VdcPtB5Vspou13KfnpTPwnBF6iK3jVo69ywnn"
+			]
+		}
+	},
+	"version": 1
+}
