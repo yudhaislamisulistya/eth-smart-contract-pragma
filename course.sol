@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.7.0;
+pragma experimental ABIEncoderV2;
 
 contract CourseManagement {
     enum Status {
@@ -36,16 +37,7 @@ contract CourseManagement {
         courseCodes.push(code);
     }
 
-    function getAllCourses()
-        public
-        view
-        returns (
-            bytes32[] memory,
-            string[] memory,
-            Status[] memory,
-            uint[] memory
-        )
-    {
+    function getAllCourses() public view returns (bytes32[] memory, string[] memory, Status[] memory, uint[] memory) {
         uint count = courseCodes.length;
 
         string[] memory names = new string[](count);
@@ -63,25 +55,10 @@ contract CourseManagement {
         return (courseCodes, names, statuses, quotas);
     }
 
-    function getCourse(bytes32 _code)
-        public
-        view
-        returns (
-            string memory,
-            uint,
-            Status,
-            bool
-        )
-    {
+    function getCourse(bytes32 _code) public view returns (bytes32, string memory, Status, uint) {
+        require(courses[_code].exists, "Course does not exist");
+
         Course memory course = courses[_code];
-
-        require(course.exists, "Course does not exist");
-
-        return (
-            course.name,
-            course.quota,
-            course.status,
-            course.exists
-        );
+        return (_code, course.name, course.status, course.quota);
     }
 }

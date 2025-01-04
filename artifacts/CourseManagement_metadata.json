@@ -16,6 +16,11 @@
 						"internalType": "uint256",
 						"name": "_quota",
 						"type": "uint256"
+					},
+					{
+						"internalType": "enum CourseManagement.Status",
+						"name": "_status",
+						"type": "uint8"
 					}
 				],
 				"name": "addCourse",
@@ -31,7 +36,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "courseCode",
+				"name": "courseCodes",
 				"outputs": [
 					{
 						"internalType": "bytes32",
@@ -61,6 +66,11 @@
 						"internalType": "uint256",
 						"name": "quota",
 						"type": "uint256"
+					},
+					{
+						"internalType": "enum CourseManagement.Status",
+						"name": "status",
+						"type": "uint8"
 					},
 					{
 						"internalType": "bool",
@@ -94,6 +104,68 @@
 				],
 				"stateMutability": "pure",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getAllCourses",
+				"outputs": [
+					{
+						"internalType": "bytes32[]",
+						"name": "",
+						"type": "bytes32[]"
+					},
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					},
+					{
+						"internalType": "enum CourseManagement.Status[]",
+						"name": "",
+						"type": "uint8[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_code",
+						"type": "bytes32"
+					}
+				],
+				"name": "getCourse",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "enum CourseManagement.Status",
+						"name": "",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -124,11 +196,11 @@
 	},
 	"sources": {
 		"course.sol": {
-			"keccak256": "0x77108628dff8bd3822037f9ea5d9d8d1998510a0b9f5b3b3e3a43476c659435a",
+			"keccak256": "0xd17e82fd7922eeff2df9a2d6b0e04fbf6ff0563577e7e295ff0e965eee839ef8",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d4bf7a9ddb0efbc7cc376bffb86fe026f2032cd62d5f7ad1e27e1df656e0bf33",
-				"dweb:/ipfs/QmPMvzwSxzT8jy2TCJvbjhs2EfcMn4FHDc8X1VwsptjQhg"
+				"bzz-raw://e253c1d7eaa136a5d667afe13dc1287524f75defead091a56b3d45ffbce3b68e",
+				"dweb:/ipfs/QmYfAsF5DXskrnYtapciFiDoboQC1TJungPYQvAtd9RGAw"
 			]
 		}
 	},
